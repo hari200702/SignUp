@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 45px;
+    background-color: #1f1f1f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 8px 0;
+}
+
+header a {
+    color: #66baff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main {
+    min-height: 740px;
+    border: 1px solid #009dff;
+    background-color: black;
+    padding: 110px 12%;
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0 0 22px;
+}
+
+form > input {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 8px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #777;
+    font-size: 16px;
+    outline: none;
+}
+
+form > input:focus {
+    border-bottom-color: #009dff;
+}
+
+form input::placeholder {
+    color: #ddd;
+    opacity: 1;
+}
+
+.radio-group {
+    display: flex;
+    gap: 45px;
+    margin: 24px 0;
+}
+
+.radio-group label,
+.terms label {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.radio-group input,
+.terms input {
+    accent-color: white;
+}
+
+.terms {
+    margin: 20px 0 48px;
+}
+
+button {
+    width: 165px;
+    height: 44px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px;
+    }
+
+    main {
+        padding: 60px 8%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .radio-group {
+        gap: 20px;
+    }
+}

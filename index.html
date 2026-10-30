@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup form for students and employees.">
+    <title>Signup</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#">Signup</a>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <h1>Signup</h1>
+
+            <label for="fullName" class="visually-hidden">Full Name</label>
+            <input type="text" id="fullName" name="fullName"
+                   placeholder="Full Name" required>
+
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Email" required>
+
+            <label for="password" class="visually-hidden">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Password" required>
+
+            <label for="confirmPassword" class="visually-hidden">
+                Confirm Password
+            </label>
+            <input type="password" id="confirmPassword"
+                   name="confirmPassword"
+                   placeholder="Confirm Password" required>
+
+            <label for="dob" class="visually-hidden">Date of Birth</label>
+            <input type="text" id="dob" name="dob"
+                   placeholder="MM/DD/YYYY"
+                   onfocus="this.type='date'"
+                   onblur="if(!this.value)this.type='text'"
+                   required>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="role" value="student" required>
+                    Student
+                </label>
+
+                <label>
+                    <input type="radio" name="role" value="employee">
+                    Employee
+                </label>
+            </div>
+
+            <div class="terms">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to all the Terms and conditions
+                </label>
+            </div>
+
+            <button type="submit">Signup</button>
+        </form>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
